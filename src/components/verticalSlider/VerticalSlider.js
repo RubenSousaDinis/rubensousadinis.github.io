@@ -15,9 +15,9 @@ export default class VerticalSlider extends React.Component {
         this.state = { active : 0, prevDotClick: -1 }
 
         const slides = [
-            { title: "News Feed", description:"View the previsions made by other tipsters", href:"#/feed", refTitle:"News Feed", background: "img/covers/section002.jpg" },
-            { title: "Share a tip", description:"Browse through the sport events available and share a tip", href:"#/sports", refTitle:"Share a tip", background: "img/covers/section003.jpg" },
-            { title: "Rankings", description:"Find the best tipsters to help you become more profitable", href:"#/rankings", refTitle:"Rankings", background: "img/covers/section004.jpg" }
+            { title: "About Me", description:"Love travelling and pratice sports!", href:"#/feed", refTitle:"Love travelling and pratice sports!", background: "img/section_2.jpg" },
+            { title: "Portfolio", description:"Web Development passionate", href:"#/sports", refTitle:"Web Development passionate", background: "img/section_3.jpeg" },
+            { title: "Contacts", description:"You can find me here", href:"#/rankings", refTitle:"Contacts", background: "img/section_4.jpeg" }
         ]
 
         this.slides = slides

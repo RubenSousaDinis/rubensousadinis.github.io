@@ -8,10 +8,11 @@ export default class OverviewSlide extends React.Component {
   render() {
     
     const title = "Rúben Sousa Dinis"
-    const description = "Full Stack Web Developer"
-    const background = "img/covers/section001.jpg"
+    const description = "I'm a Full Stack Web Developer at Runtime Revolution"
+    const refTitle = "Scroll down to know more about me."
+    const background = "img/section_1.jpeg"
     
-    const { active, next, prevDotClick, href, refTitle } = this.props
+    const { active, next, prevDotClick, href } = this.props
     return (
       <section className={classNames("slide", { active, next, prevDotClick } ) } >
         <picture style={ { backgroundImage: "url(" + background + ")" } } />
@@ -20,7 +21,7 @@ export default class OverviewSlide extends React.Component {
             <Header as='h1'>{ title }</Header>
             <Image src='img/foto_perfil.jpg' size='small' circular centered />
             <Header as='h3'>{ description }</Header>
-            <a className={classNames("hover-underline")} href={ href }>{ refTitle }</a>
+            <Header as='h4'>{ refTitle }</Header>
           </div>
         </div>
         <div className={classNames("icon-scroll")} ></div>
