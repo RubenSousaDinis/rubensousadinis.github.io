@@ -5,6 +5,7 @@ import classNames from "classnames"
 import Dots from "./Dots"
 import Slide from "./Slide"
 import OverviewSlide from "./slides/OverviewSlide"
+import AboutMeSlide from "./slides/AboutMeSlide"
 
 import './verticalSlider.css'
 
@@ -15,13 +16,12 @@ export default class VerticalSlider extends React.Component {
         this.state = { active : 0, prevDotClick: -1 }
 
         const slides = [
-            { title: "About Me", description:"Love travelling and pratice sports!", href:"#/feed", refTitle:"Love travelling and pratice sports!", background: "img/section_2.jpg" },
             { title: "Portfolio", description:"Web Development passionate", href:"#/sports", refTitle:"Web Development passionate", background: "img/section_3.jpeg" },
             { title: "Contacts", description:"You can find me here", href:"#/rankings", refTitle:"Contacts", background: "img/section_4.jpeg" }
         ]
 
         this.slides = slides
-        this.nSlides = slides.length + 1
+        this.nSlides = 2
         this.slidesTitles = slides.map(slide => slide.title)
 
         document.addEventListener('wheel', this.handleWheel.bind(this));
@@ -102,14 +102,15 @@ export default class VerticalSlider extends React.Component {
 
         const slides = this.slides.map(
           (slide, i) => 
-          <Slide key={i+1} {...slide} active={active==i+1} next={active==i} prevDotClick={prevDotClick==i+1} />
+          <Slide key={i+1} {...slide} active={active==i} next={active==i-1} prevDotClick={prevDotClick==i} />
         )
+        console.log(slides)
 
         return (
           <section id="vertical-slider" className={classNames({ selected })} >
             <OverviewSlide active={active==0} next={active==-1}  prevDotClick={prevDotClick==0}/>
-            {slides}
-            <Dots n={this.nSlides} tooltipsData={this.slidesTitles} onDotClick={this.onDotClick.bind(this)} active={active} />
+            <AboutMeSlide active={active==1} next={active==0}  prevDotClick={prevDotClick==1}/>
+            <Dots n={2} tooltipsData={this.slidesTitles} onDotClick={this.onDotClick.bind(this)} active={active} />
           </section>
         )
     }
