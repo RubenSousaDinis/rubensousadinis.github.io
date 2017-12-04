@@ -109,17 +109,9 @@
 }
 
 #vertical-slider .slide a{
-	font-size: 12px;
+	text-decoration: underline;
 	color: white !important;
-	text-transform: uppercase;
 }
-
-#vertical-slider .slide a:after{
-	background-color: white;
-    bottom: -2px;
-    height: 1px;
-}
-
 
 #vertical-slider .slide > picture{
 	position: absolute;
@@ -269,3 +261,6 @@
 	}
 }
 
+.content-div {
+  width: 70%;
+}

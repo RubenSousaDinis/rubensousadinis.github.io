@@ -1,13 +1,25 @@
 import React, { Component } from 'react';
-import { Switch, Route } from 'react-router-dom';
-import VerticalSlider from './verticalSlider/VerticalSlider';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import MainSlider from './verticalSlider/MainSlider';
+import PageNotFound from './PageNotFound';
 
 export default class App extends Component {
   render() {
     return (
-      <div id="wrapper">
-        <VerticalSlider selected={true} />
-      </div>
+      <Router>
+        <Switch>
+          <Route
+            title='App'
+            path='/'
+            component={MainSlider}
+            exact
+          />
+          <Route
+            title='Page Not Found'
+            component={PageNotFound}
+          />
+        </Switch>
+      </Router>
     )
   }
 }
