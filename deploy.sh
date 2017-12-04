@@ -8,7 +8,7 @@ cp -r build ../build/
 
 rm -rf *
 
-cp ../build/* .
+cp -r ../build/* .
 
 git add .
 
