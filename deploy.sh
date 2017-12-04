@@ -4,7 +4,7 @@ git checkout master
 
 git merge source
 
-cp build ../build
+cp -r build ../build/
 
 rm -rf *
 
