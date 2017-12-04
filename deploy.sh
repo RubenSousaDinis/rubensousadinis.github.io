@@ -17,3 +17,5 @@ git commit -am "Deploy"
 git push
 
 git checkout source
+
+echo "Deployed"
