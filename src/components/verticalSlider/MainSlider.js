@@ -17,7 +17,7 @@ export default class MainSlider extends React.Component {
       this.selected = true
 
       this.slidesTitles = [
-        'Begin', 
+        'Presentation', 
         'About Me'
       ]
       this.nSlides = this.slidesTitles.length
