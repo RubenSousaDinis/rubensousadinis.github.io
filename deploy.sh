@@ -2,6 +2,8 @@
 
 git checkout master
 
+git reset --hard HEAD~1
+
 git merge source
 
 cp -r build ../build/
@@ -9,6 +11,8 @@ cp -r build ../build/
 rm -rf *
 
 cp -r ../build/* .
+
+rm -rf ../build
 
 git add .
 
