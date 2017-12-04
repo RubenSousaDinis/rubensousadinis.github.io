@@ -2,8 +2,6 @@
 
 git checkout master
 
-git reset --hard HEAD~1
-
 git merge source
 
 cp build ../build
