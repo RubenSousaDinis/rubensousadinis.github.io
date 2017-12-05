@@ -2,8 +2,8 @@ import React from "react"
 import classNames from "classnames"
 import '../verticalSlider.css'
 import { Image, Header } from 'semantic-ui-react'
-import background from './section_1.jpeg'
-import logo from './foto_perfil.jpg'
+import background from '../../../img/section_1.jpeg'
+import logo from '../../../img/foto_perfil.jpg'
 
 export default class OverviewSlide extends React.Component {
 

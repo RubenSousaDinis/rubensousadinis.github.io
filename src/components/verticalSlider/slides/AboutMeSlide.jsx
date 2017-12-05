@@ -2,7 +2,7 @@ import React from "react"
 import classNames from "classnames"
 import '../verticalSlider.css'
 import { Header } from 'semantic-ui-react'
-import background from './section_2.jpg'
+import background from '../../../img/section_2.jpg'
 
 export default class AboutMeSlide extends React.Component {
 
