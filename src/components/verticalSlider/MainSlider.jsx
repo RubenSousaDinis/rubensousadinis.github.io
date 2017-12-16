@@ -5,6 +5,8 @@ import classNames from "classnames"
 import Dots from "./Dots"
 import OverviewSlide from "./slides/OverviewSlide"
 import AboutMeSlide from "./slides/AboutMeSlide"
+import CurrentJobSlide from "./slides/CurrentJobSlide"
+import ContactSlide from "./slides/ContactSlide"
 
 import './verticalSlider.css'
 
@@ -18,7 +20,9 @@ export default class MainSlider extends React.Component {
 
       this.slidesTitles = [
         'Presentation Initial', 
-        'About Me'
+        'About Me',
+        'Runtime Revolution',
+        'Contacts'
       ]
       this.nSlides = this.slidesTitles.length
 
@@ -101,6 +105,8 @@ export default class MainSlider extends React.Component {
           <section id="vertical-slider" className={classNames({ selected })} >
             <OverviewSlide active={active===0} next={active===-1}  prevDotClick={prevDotClick===0}/>
             <AboutMeSlide active={active===1} next={active===0}  prevDotClick={prevDotClick===1}/>
+            <CurrentJobSlide active={active===2} next={active===1}  prevDotClick={prevDotClick===2}/>
+            <ContactSlide active={active===3} next={active===2}  prevDotClick={prevDotClick===3}/>
             <Dots n={this.nSlides} tooltipsData={this.slidesTitles} onDotClick={this.onDotClick.bind(this)} active={active} />
           </section>
         </div>
