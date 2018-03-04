@@ -141,6 +141,12 @@
 	margin: 25px 0;
 }
 
+@media only screen and (max-width: 640px) {
+    #vertical-slider .dot {
+        display: none;
+    }
+}
+
 #vertical-slider .dot span{
 	position: relative;
 	display: block;

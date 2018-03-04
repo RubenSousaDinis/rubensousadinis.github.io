@@ -29,6 +29,9 @@ export default class ContactSlide extends React.Component {
               <a href={'mailto:ruben.sousa.dinis@gmail.com'} style={{textDecoration: 'none'}}>
                 <Icon size='huge' name='mail' />
               </a>
+              <a href={'https://medium.com/@ruben.sousa.dinis'} target='_blank' style={{textDecoration: 'none'}}>
+                <Icon size='huge' name='medium' />
+              </a>
             </div>
         </div>
         <div className={classNames("icon-scroll")} ></div>

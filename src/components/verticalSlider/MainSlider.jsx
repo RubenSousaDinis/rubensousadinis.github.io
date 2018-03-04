@@ -1,20 +1,23 @@
-import React from "react"
+import React from 'react'
 
-import classNames from "classnames"
+import classNames from 'classnames'
 
-import Dots from "./Dots"
-import OverviewSlide from "./slides/OverviewSlide"
-import AboutMeSlide from "./slides/AboutMeSlide"
-import CurrentJobSlide from "./slides/CurrentJobSlide"
-import ContactSlide from "./slides/ContactSlide"
+import Dots from './Dots'
+import OverviewSlide from './slides/OverviewSlide'
+import AboutMeSlide from './slides/AboutMeSlide'
+import CurrentJobSlide from './slides/CurrentJobSlide'
+import ContactSlide from './slides/ContactSlide'
+
 
 import './verticalSlider.css'
+
+const SCROLL_WAIT = 800
 
 export default class MainSlider extends React.Component {
 
     constructor(args){
       super(args)
-      this.state = { active : 0, prevDotClick: -1 }
+      this.state = { active : 0, prevDotClick: -1, lastScrollDate: Date.now() }
 
       this.selected = true
 
@@ -33,6 +36,11 @@ export default class MainSlider extends React.Component {
     }
 
     handleWheel(e){
+      const lastScrollDate = this.state.lastScrollDate;
+      if ((lastScrollDate + SCROLL_WAIT - Date.now()) >= 0) {
+        return;
+      }
+      this.setState({lastScrollDate: Date.now()});
       const deltaY = e.deltaY
       if(deltaY > 0) {
         this.slideUp()
@@ -101,8 +109,8 @@ export default class MainSlider extends React.Component {
       const selected = this.selected
 
       return (
-        <div id="wrapper">
-          <section id="vertical-slider" className={classNames({ selected })} >
+        <div id='wrapper'>
+          <section id='vertical-slider' className={classNames({ selected })} >
             <OverviewSlide active={active===0} next={active===-1}  prevDotClick={prevDotClick===0}/>
             <AboutMeSlide active={active===1} next={active===0}  prevDotClick={prevDotClick===1}/>
             <CurrentJobSlide active={active===2} next={active===1}  prevDotClick={prevDotClick===2}/>
