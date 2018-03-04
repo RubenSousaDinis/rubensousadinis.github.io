@@ -20,6 +20,9 @@ export default class ContactSlide extends React.Component {
               <a href={'https://www.linkedin.com/in/rúben-dinis-923159b2'} target='_blank' style={{textDecoration: 'none'}}>
                 <Icon size='huge' name='linkedin square' />
               </a>
+              <a href={'https://github.com/RubenSousaDinis'} target='_blank' style={{textDecoration: 'none'}}>
+                <Icon size='huge' name='github' />
+              </a>
               <a href={'https://www.facebook.com/ruben.dinis.31'} target='_blank' style={{textDecoration: 'none'}}>
                 <Icon size='huge' name='facebook' />
               </a>
