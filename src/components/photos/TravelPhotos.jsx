@@ -56,10 +56,12 @@ export default class TravelPhotos extends React.Component {
   render() {
     return (
         <Container>
-            <Link className='back-arrow' to={'/'}>
-                <Icon size='medium' name='arrow left' />
-                Back to Homepage
-            </Link>
+            <div className='back-arrow-wrapper'>
+                <Link to={'/'}>
+                    <Icon size='medium' name='arrow left' />
+                    Back to Homepage
+                </Link>
+            </div>
             <Header style={{textAlign: 'center'}} as='h1'>{ 'Trips Gallery' }</Header>
             <Gallery photos={photos} onClick={this.openLightbox} />
             <Lightbox images={photos}
