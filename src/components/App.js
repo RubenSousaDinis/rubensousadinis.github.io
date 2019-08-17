@@ -8,7 +8,7 @@ import PageNotFound from './PageNotFound';
 export default class App extends Component {
   render() {
     return (
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Switch>
           <Route
             title='App'
