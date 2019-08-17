@@ -12,19 +12,19 @@ export default class App extends Component {
         <Switch>
           <Route
             title='App'
-            path='/'
+            path={process.env.PUBLIC_URL + '/'}
             component={MainSlider}
             exact
           />
           <Route
             title='Travel Photos'
-            path='/travel_photos'
+            path={process.env.PUBLIC_URL + '/travel_photos'}
             component={TravelPhotos}
             exact
           />
           <Route
             title='Resume'
-            path='/resume'
+            path={process.env.PUBLIC_URL +'/resume'}
             component={Resume}
             exact
           />
