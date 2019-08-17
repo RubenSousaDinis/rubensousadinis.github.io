@@ -1,7 +1,6 @@
 import React from "react"
 import classNames from "classnames"
 import '../verticalSlider.css'
-import { Header } from 'semantic-ui-react'
 import background from '../../../img/section_2.jpg'
 
 export default class AboutMeSlide extends React.Component {
@@ -17,12 +16,12 @@ export default class AboutMeSlide extends React.Component {
         <picture style={ { backgroundImage: "url(" + background + ")" } } />
       	<div>
           <div className={classNames('content-div')}>
-            <Header as='h1'>{ title }</Header>
-            <p>
+            <h1 className='font-weight-bold mb-3'>{ title }</h1>
+            <p className='text-center my-3'>
               {"I’m a Full Stack Web Developer. Currently, I work at Runtime Revolution."} 
               {". I’m also passionate with sports, I’ve a workout routine, which is composed by gym activities, soccer and some runs (I’ve already run an half-marathon). In my free time I like to go out with friends, learn new stuff and support my favourite soccer team."} 
             </p>
-            <Header as='h4'>{ refTitle }</Header>
+            <h3 className='font-weight-bold'>{ refTitle }</h3>
           </div>
         </div>
         <div className={classNames("icon-scroll")} ></div>

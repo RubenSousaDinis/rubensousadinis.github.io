@@ -1,7 +1,6 @@
 import React from "react"
 import classNames from "classnames"
 import '../verticalSlider.css'
-import { Image, Header } from 'semantic-ui-react'
 import background from '../../../img/section_3.jpeg'
 import runtimeLogo from '../../../img/runtime_logo.png'
 
@@ -18,19 +17,19 @@ export default class CurrentJobSlide extends React.Component {
       	<div>
           <div className={classNames('content-div')}>
             <a href={'http://www.runtime-revolution.com/'} target='_blank'>
-                <Image src={runtimeLogo} size='medium'  centered />
+              <img src={runtimeLogo} size='medium' alt="Runtime Revolution Logo" />
             </a>
-            <Header as='h3'>
+            <h3 className='font-weight-bold my-3'>
               {description}
               <a href={'http://www.runtime-revolution.com/'} target='_blank'>
                 Runtime Revolution.
               </a>
-            </Header>
-            <p>
+            </h3>
+            <p className='text-center my-3'>
               {"At Runtime I work as a web developer, trying to deliver the best possible solution to our clients from all over the world."}
               {"I work with several different technologies, such as Ruby, Rails, Python, Django, React, React Native, Ember and many others."}
             </p>
-            <Header as='h4'>{ refTitle }</Header>
+            <h3 className='font-weight-bold'>{ refTitle }</h3>
           </div>
         </div>
         <div className={classNames("icon-scroll")} ></div>

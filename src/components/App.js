@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import MainSlider from './verticalSlider/MainSlider';
 import TravelPhotos from './photos/TravelPhotos';
+import Resume from './resume';
 import PageNotFound from './PageNotFound';
 
 export default class App extends Component {
@@ -19,6 +20,12 @@ export default class App extends Component {
             title='Travel Photos'
             path='/travel_photos'
             component={TravelPhotos}
+            exact
+          />
+          <Route
+            title='Resume'
+            path='/resume'
+            component={Resume}
             exact
           />
           <Route

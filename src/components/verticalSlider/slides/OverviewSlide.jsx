@@ -1,9 +1,8 @@
 import React from "react"
 import classNames from "classnames"
 import '../verticalSlider.css'
-import { Image, Header } from 'semantic-ui-react'
 import background from '../../../img/section_1.jpeg'
-import logo from '../../../img/foto_perfil.jpg'
+import profileImage from '../../../img/foto_perfil.jpg'
 
 export default class OverviewSlide extends React.Component {
 
@@ -19,15 +18,15 @@ export default class OverviewSlide extends React.Component {
         <picture style={ { backgroundImage: "url(" + background + ")" } } />
       	<div>
           <div>
-            <Header as='h1'>{ title }</Header>
-            <Image src={logo} size='small' circular centered />
-            <Header as='h3'>
+            <h1 className='font-weight-bold mb-3'>{ title } </h1>
+            <img src={profileImage} style={{height: '150px'}} className='rounded-circle mb-2' alt='Rúben face' />
+            <h2 className='font-weight-bold my-3' >
               {description}
               <a href={'http://www.runtime-revolution.com/'} target='_blank'>
                 Runtime Revolution
               </a>
-            </Header>
-            <Header as='h4'>{ refTitle }</Header>
+            </h2>
+            <h3 className='font-weight-bold'>{ refTitle }</h3>
           </div>
         </div>
         <div className={classNames("icon-scroll")} ></div>

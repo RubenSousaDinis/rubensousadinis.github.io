@@ -1,17 +1,14 @@
 import React from 'react'
-
-import classNames from 'classnames'
-
 import Dots from './Dots'
 import OverviewSlide from './slides/OverviewSlide'
 import AboutMeSlide from './slides/AboutMeSlide'
 import CurrentJobSlide from './slides/CurrentJobSlide'
 import ContactSlide from './slides/ContactSlide'
 
-
 import './verticalSlider.css'
 
 const SCROLL_WAIT = 800
+var classNames = require('classnames');
 
 export default class MainSlider extends React.Component {
 
