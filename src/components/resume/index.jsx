@@ -138,7 +138,7 @@ export default class Dots extends React.Component {
             <div class="row clearfix layout layout-top-middle">
               <div class="col-xs-12 col-print-12 details">
                 <h2 className="mb-0 font-weight-bold">My Personal Website</h2>
-                <a href="https://github.com/RubenSousaDinis/rubensousadinis.github.io" target="_blank" rel="noopener noreferrer" class="link">github.com/RubenSousaDinis/rubensousadinis.github.io</a>
+                <a href="https://github.com/RubenSousaDinis/rubensousadinis.github.io" target="_blank" rel="noopener noreferrer" class="link text-break">github.com/RubenSousaDinis/rubensousadinis.github.io</a>
                 <p class="no-print">
                   <a href="https://github.com/RubenSousaDinis/rubensousadinis.github.io" target="_blank" rel="noopener noreferrer">
                     <i class="fa fa-github" title="My Website Link"></i>
@@ -175,6 +175,31 @@ export default class Dots extends React.Component {
                 </p>
                 <p>
                   I made this tutorial to explain how to integrate a Websocket client with <mark>Django Channels</mark>. You can check it the post <a href="https://revs.runtime-revolution.com/a-simple-real-time-chat-with-django-channels-and-react-b73edc3a79f2" target="_blank" rel="noopener noreferrer">here.</a> Fell free to clap it too!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="container publications-container">
+            <h2 className="text-center dashed pb-2">Publications</h2>
+            <div class="row clearfix layout layout-top-middle">
+              <div class="col-xs-12 col-print-12 details">
+                <h2 className="mb-0 font-weight-bold">A Simple Real Time Chat with Django Channels and React</h2>
+                <a href="https://revs.runtime-revolution.com/a-simple-real-time-chat-with-django-channels-and-react-b73edc3a79f2" target="_blank" rel="noopener noreferrer" class="link">Check Here</a>
+                <p class="no-print">
+                  <a href="https://revs.runtime-revolution.com/a-simple-real-time-chat-with-django-channels-and-react-b73edc3a79f2" target="_blank" rel="noopener noreferrer">
+                    <i class="fa fa-medium" title="A Simple Real Time Chat with Django Channels and React Link"></i>
+                  </a>
+                </p>
+              </div>
+            </div>
+            <div class="row clearfix layout layout-top-middle">
+              <div class="col-xs-12 col-print-12 details">
+                <h2 className="mb-0 font-weight-bold">Deploy your Rails app with Capistrano</h2>
+                <a href="https://revs.runtime-revolution.com/deploy-your-rails-app-with-capistrano-5ad5d58e9b07" target="_blank" rel="noopener noreferrer" class="link">Check Here</a>
+                <p class="no-print">
+                  <a href="https://revs.runtime-revolution.com/deploy-your-rails-app-with-capistrano-5ad5d58e9b07" target="_blank" rel="noopener noreferrer">
+                    <i class="fa fa-medium" title="Deploy your rails App with Capistrano Link"></i>
+                  </a>
                 </p>
               </div>
             </div>
