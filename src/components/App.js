@@ -8,23 +8,23 @@ import PageNotFound from './PageNotFound';
 export default class App extends Component {
   render() {
     return (
-      <Router basename={process.env.PUBLIC_URL}>
+      <Router>
         <Switch>
           <Route
             title='App'
-            path={process.env.PUBLIC_URL + '/'}
+            path='/'
             component={MainSlider}
             exact
           />
           <Route
             title='Travel Photos'
-            path={process.env.PUBLIC_URL + '/travel_photos'}
+            path='/travel_photos'
             component={TravelPhotos}
             exact
           />
           <Route
             title='Resume'
-            path={process.env.PUBLIC_URL +'/resume'}
+            path='/resume'
             component={Resume}
             exact
           />
