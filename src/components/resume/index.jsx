@@ -214,7 +214,7 @@ export default class Dots extends React.Component {
               </div>
               <div class="col-xs-12 col-sm-8 col-md-9 col-print-12">
                 <p class="quote">Founded on 23rd May 1911, IST is one of the greateast University in Portugal</p>
-                <p>During my time at IST I learnt most of my key skills that have I have taken through my career such as teamwork and working to tight deadlines. I thouroughly enjoyed my time as university, learnt a lot about and gained lots of great experiences</p>
+                <p>During my time at IST I learnt most of my key skills that I have taken through my career such as teamwork and working to tight deadlines. I thouroughly enjoyed my time as university, learnt a lot about and gained lots of great experiences</p>
               </div>
             </div>
           </div>
