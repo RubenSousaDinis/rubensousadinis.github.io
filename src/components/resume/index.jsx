@@ -9,16 +9,16 @@ export default class Dots extends React.Component {
     const mainSkills = [
       { type: "Ruby", level: 100 },
       { type: "Rails", level: 100 },
-      { type: "Javascript", level: 80 },
-      { type: "React", level: 80 },
+      { type: "HTML", level: 90 },
+      { type: "Javascript", level: 90 },
+      { type: "React", level: 85 },
       { type: "CSS", level: 80 },
-      { type: "HTML", level: 80 },
       { type: "Python", level: 75 },
       { type: "Django", level: 70 },
     ]
     const secondarySkills = [
       { type: "Heroku", level: 100 },
-      { type: "Cloudflare", level: 70 },
+      { type: "Cloudflare", level: 80 },
       { type: "AWS", level: 60 },
       { type: "React Native", level: 60 },
       { type: "Ember", level: 50 },
@@ -28,7 +28,7 @@ export default class Dots extends React.Component {
     ]
     return (
       <div>
-        <div class="container header-contianer">
+        <div class="container header-container">
           <div class="row">
           <div class="col-xs-12 col-sm-6 col-md-6 col-lg-8 header-left">
             <h1>Rúben Dinis</h1>
@@ -76,7 +76,7 @@ export default class Dots extends React.Component {
               </div>
             </div>
           </div>
-          <div class="container experience-container">
+          <div class="container skills-container">
             <h2 className="text-center dashed pb-2">Skills</h2>
             <div class="row clearfix layout layout-left mb-3">
               <div class="col-xs-12 col-sm-6 col-md-6 col-print-6 details">
