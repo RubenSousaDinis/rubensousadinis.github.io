@@ -7,11 +7,10 @@ import profileImage from '../../../img/foto_perfil.jpg'
 export default class OverviewSlide extends React.Component {
 
   render() {
-    
     const title = "Rúben Sousa Dinis"
     const description = "I'm a Full Stack Web Developer at "
     const refTitle = "Scroll down to know more about me."
-    
+
     const { active, next, prevDotClick } = this.props
     return (
       <section className={classNames("slide", { active, next, prevDotClick } ) } >
@@ -22,8 +21,8 @@ export default class OverviewSlide extends React.Component {
             <img src={profileImage} style={{height: '150px'}} className='rounded-circle mb-2' alt='Rúben face' />
             <h2 className='font-weight-bold my-3' >
               {description}
-              <a href={'http://www.runtime-revolution.com/'} target='_blank'>
-                Runtime Revolution
+              <a href={'https://getlavanda.com/'} target='_blank'>
+                Lavanda
               </a>
             </h2>
             <h3 className='font-weight-bold'>{ refTitle }</h3>

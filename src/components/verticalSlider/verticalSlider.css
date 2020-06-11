@@ -66,6 +66,11 @@
 	color: white;
 }
 
+#vertical-slider .logo {
+	border-radius: 50%;
+	height: 150px;
+}
+
 #vertical-slider .slide > div{
     display: flex;
     align-items: center;
@@ -197,7 +202,7 @@
 
 
 /* boutik.pt */
-	
+
 #vertical-slider .icon-scroll{
 	width:20px;
 	height:30px !important;

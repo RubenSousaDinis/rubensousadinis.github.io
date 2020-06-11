@@ -6,10 +6,9 @@ import background from '../../../img/section_4.jpeg'
 export default class ContactSlide extends React.Component {
 
   render() {
-    
     const title = "Contacts"
-    
     const { active, next, prevDotClick } = this.props
+
     return (
       <section className={classNames("slide", { active, next, prevDotClick } ) } >
         <picture style={ { backgroundImage: "url(" + background + ")" } } />

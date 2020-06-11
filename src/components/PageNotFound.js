@@ -17,13 +17,13 @@ export default class PageNotFound extends Component {
               <div className={classNames('content-div')}>
                 <Header as='h1'>{ 'Are you lost?' }</Header>
                 <Link to={'/'}>
-                  Back to Homepage 
+                  Back to Homepage
                 </Link>
               </div>
             </div>
           </section>
         </section>
-        </div>  
+        </div>
     )
   }
 }
